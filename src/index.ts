@@ -31,8 +31,8 @@ const app = express();
 app.use(bodyParser.json())
 
 // allow requests from localhost:3000
-// app.use(cors({ origin: 'http://bia-winsrv-tst1:9300/' }));
-app.use(cors({ origin: 'http://localhost:3000/' }));
+app.use(cors({ origin: 'http://bia-winsrv-tst1:9300/' }));
+// app.use(cors({ origin: 'http://localhost:3000/' }));
 
 
 
@@ -85,9 +85,9 @@ app.get('/reload', (req, res) => {
 // const port = process.env.PORT || 9340;
 const port = process.env.PORT || 9340;
 
-// const mongoUrl = "mongodb+srv://pasinduv:Adhikari2@cluster0.n5isozb.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl = "mongodb+srv://pasinduv:Adhikari2@cluster0.n5isozb.mongodb.net/?retryWrites=true&w=majority";
 // const mongourl = "mongodb://localhost:27017/";
-const mongoUrl = "mongodb://localhost:27017/";
+// const mongoUrl = "mongodb://localhost:27017/";
 
 // const mongoUrl = "mongodb://10.75.152.120:27017/";
 

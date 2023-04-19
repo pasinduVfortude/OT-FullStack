@@ -33,8 +33,6 @@ function App() {
           <Route path='/approvehod' element={<HODapprove />}/>
           <Route path='/approvegm' element={<GMapprove />}/>
           <Route path='/administration' element={<Administration />}/>
-
-
         </Routes>
       </BrowserRouter>
     </div>
