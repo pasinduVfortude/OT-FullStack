@@ -233,7 +233,7 @@ function App() {
       )} */}
 
       <div>
-        <button style={{backgroundColor:"#0b59d6", color:"white", width:"120px", height:"35px",borderRadius:"10px", fontSize:"16px", marginTop:"-8rem",cursor:'pointer'}} onClick={(e)=>{window.location.href ="/login"}}>Admin Login</button>
+        <button style={{backgroundColor:"#0b59d6", color:"white", width:"120px", height:"35px",borderRadius:"10px", fontSize:"16px", marginTop:"2rem",cursor:'pointer'}} onClick={(e)=>{window.location.href ="/login"}}>Admin Login</button>
         {/* Following div will only visible to users after excel sheet selected, date selected, and group selected */}
         {/* console.log(formData) */}
         {date !== '' && team !== '' ? (
@@ -241,9 +241,9 @@ function App() {
             <form onSubmit={SubmitList}>
             <div style={{backgroundColor:"green", color:"white", height:"5rem", textAlign:"center", verticalAlign:"center"}}>
               <h1 style={{marginTop:"1rem",paddingTop:"1rem"}}>Daily OT & Transport Approval Request Form</h1>
-              <button style={{backgroundColor:"#0b59d6", color:"white", width:"90px", height:"35px",borderRadius:"10px", fontSize:"16px", marginTop:"-8rem",cursor:'pointer'}} onClick={(e)=>{window.location.href ="/login"}}>Admin Login</button>
+              {/* <button style={{backgroundColor:"#0b59d6", color:"white", width:"90px", height:"35px",borderRadius:"10px", fontSize:"16px", marginTop:"-8rem",cursor:'pointer'}} onClick={(e)=>{window.location.href ="/login"}}>Admin Login</button> */}
             </div>
-            <button className="btn btn-danger btn-lg" style={{marginLeft:"-60rem", marginTop:"5rem"}} onClick={(e) =>{setIsUploaded(false);window.location.reload(true)}}>Back</button>
+            <button className="btn btn-danger btn-lg" style={{marginLeft:"-60rem", marginTop:"5rem", backgroundColor:"red", color:"white", width:"120px", height:"35px",borderRadius:"10px", fontSize:"16px", marginTop:"2rem",cursor:'pointer'}} onClick={(e) =>{setIsUploaded(false);window.location.reload(true)}}>Back</button>
               <h4 style={{marginTop:"1rem"}}>Date: {date}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Team: {team}</h4>
               <h5 style={{marginTop:"2rem",border:"red 2px solid",paddingTop:"8px", paddingBottom:"8px"}} className="h4">පහත සඳහන් කාල සීමාව තුලදී අතිකාල සේවයේ යෙදීමට අපගේ කැමැත්ත ප්‍රකාශ කර සිටිමු. </h5>
               <table  style={{marginTop:"2rem"}} className="table">
@@ -289,7 +289,7 @@ function App() {
                 
                 </tbody>
               </table>
-              <button id="SubmitBtn" type="submit" className="btn btn-success btn-lg" style={{width:"180px",height:"50px",marginBottom:"20px"}}>Submit</button>
+              <button id="SubmitBtn" type="submit" className="btn btn-success btn-lg" style={{width:"180px",height:"50px",marginBottom:"20px",backgroundColor:"green", color:"white", width:"120px", height:"35px",borderRadius:"10px", fontSize:"16px", marginTop:"2rem",cursor:'pointer'}}>Submit</button>
             </form>
           </div>
         ) : (

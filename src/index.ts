@@ -31,8 +31,8 @@ const app = express();
 app.use(bodyParser.json())
 
 // allow requests from localhost:3000
-app.use(cors({ origin: 'http://bia-winsrv-tst1:9300/' }));
-// app.use(cors({ origin: 'http://localhost:3000/' }));
+// app.use(cors({ origin: 'http://bia-winsrv-tst1:9300/' }));
+app.use(cors({ origin: 'http://localhost:3000/' }));
 
 
 

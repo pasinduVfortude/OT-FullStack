@@ -48,8 +48,8 @@ dotenv.config();
 const app = (0, express_1.default)();
 app.use(bodyParser.json());
 // allow requests from localhost:3000
-app.use(cors({ origin: 'http://bia-winsrv-tst1:9300/' }));
-// app.use(cors({ origin: 'http://localhost:3000/' }));
+// app.use(cors({ origin: 'http://bia-winsrv-tst1:9300/' }));
+app.use(cors({ origin: 'http://localhost:3000/' }));
 const userController = new UserController();
 const dataController = new DataController();
 const filecontroller = new FileController();
